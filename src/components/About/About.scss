@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+.middle-container {
+  background-color: white;
+  text-align: center;
+  margin: -1.5em 0 1em 0;
+  padding: 0 5px;
+}
+
+h2 {
+  color: #0f4c75;
+  font-family: 'Tangerine', cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-family: 'Baloo Chettan 2', cursive;
+  color: #3282b8;
+  padding: 0px;
+  font-size: 1.75em;
+}
+
+.profile {
+  margin-bottom: 5%;
+  height: fit-content;
+  min-height: 220px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.hr-content {
+  border-style: dotted none none;
+  border-width: 5px;
+  width: 5%;
+  border-color: #3282b8;
+}
+
+.hr-contact {
+  margin: 80px auto 80px auto;
+  border-style: dotted none none;
+  border-width: 5px;
+  width: 5%;
+  border-color: #3282b8;
+  margin-bottom: 10px;
+}
+
+.skill_img {
+  width: 80px;
+  margin: 0 15px;
+}
+
+.jquery-img,
+.nodejs-img,
+.mysql-img {
+  width: 140px;
+  margin: 10px 15px;
+}
+
+.p2 {
+  line-height: 2;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.head {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.btn {
+  background: #007bff;
+  -webkit-border-radius: 25;
+  -moz-border-radius: 225;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0350a2;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.btn-project {
+  position: relative;
+  top: 50px;
+}
+
+.contact-me {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 645px) {
+  .middle-container {
+    width: 50%;
+    padding-left: 25%;
+  }
+}
