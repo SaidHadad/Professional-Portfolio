@@ -1,0 +1,164 @@
+.profile-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content {
+  width: auto;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.projects-container{
+  background-color: white;
+  text-align: center;
+  margin: -1.5em 0 1em 0;
+}
+
+.portfolio-profile {
+  padding: 3em 0 1em 0;
+  text-align: center;
+}
+
+.middle-container {
+  background-color: white;
+  text-align: center;
+  margin: -1.5em 0 1em 0;
+}
+
+.project_img {
+  width: 80%;
+  height: auto;
+  padding: 30px 0 0 0;
+}
+
+.head {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.head3 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.p3 {
+  line-height: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  padding: 0 5% 0 5%;
+  color: #fff;
+}
+
+.p2 {
+  padding: 0 1em;
+}
+
+.btnDiv {
+  height: 53px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainbtn {
+  color: #fff;
+  background: #4299ed;
+  border-radius: 30px;
+  padding: 16px 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.8s all;
+}
+
+.mainbtn:hover {
+  color: #fff;
+  background: #1680e6;
+}
+
+.btn {
+  background: #007bff;
+  -webkit-border-radius: 25;
+  -moz-border-radius: 225;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0350a2;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.project1 {
+  width: 100%;
+  height: auto;
+  background: #31355b;
+  padding-bottom: 1em;
+}
+
+.project2 {
+  width: 100%;
+  height: auto;
+  background: #f8c687;
+  padding-bottom: 1em;
+}
+
+.project3 {
+  width: 100%;
+  height: auto;
+  background: #21364b;
+  padding-bottom: 1em;
+}
+
+.project4 {
+  width: 100%;
+  height: auto;
+  background: #7dcc93;
+  padding-bottom: 1em;
+}
+
+.project5 {
+  width: 100%;
+  height: auto;
+  background: #f76160;
+  padding-bottom: 1em;
+}
+
+.project6 {
+  width: 100%;
+  height: auto;
+  background: #9ed4f8;
+  padding-bottom: 1em;
+}
+
+.contact-me {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 645px) {
+  .btnDiv {
+    margin-left: 25%;
+    width: 50%;
+  }
+  
+  .content {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .portfolio-contact {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
