@@ -1,17 +1,19 @@
 import React from "react";
 import "./Footer.scss"
+import {FaGithub} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 
 function Footer () {
   return (
-    <footer className="d-flex flex-column align-items-center justify-content-between">
+    <footer>
       <div className="footer-container">
         <div className="footer-social-icons">
           <ul>
             <li>
-              <a href="https://github.com/SaidHadad" target="blank" ><i className="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://github.com/SaidHadad" target="blank" ><FaGithub /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/saidhadad/" target="blank"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/saidhadad/" target="blank"><FaLinkedin /></a>
             </li>
           </ul>
         </div>
