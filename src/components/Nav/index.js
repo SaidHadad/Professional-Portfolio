@@ -1,17 +1,33 @@
 import React from "react";
 import photo from "../../Assets/Images/ProfilePhoto.jpg";
 import "./Nav.scss"
+import "../Header/Header.scss"
 
-function Nav () {
+function Nav (props) {
+  const Page = ['About', "Projects", "Contact", "Resume"];
+
   return (
     <nav className="navbar">
       <div class="pp-div">
         <img className="PP" alt="Said" src={photo} />
       </div>
       <ul className="navbar-nav">
-        <li className="nav-item"><a className="active" href="portfolio.html">Home</a></li>
-        <li className="nav-item"><a href="/" target="_blank" rel="noreferrer">Portfolio</a></li>
-        <li className="nav-item"><a href="#contact">Resume</a></li>
+        {Page.map((location) => (
+          <li 
+            className="nav-item" 
+            key={location}
+          >
+            <a 
+              href={'#' + location.toLowerCase()}
+              onClick={() => props.handlePageChange(location)}
+              className={
+                props.currentPage === location ? 'nav-link active' : 'nav-link'
+              } 
+              >
+              {location}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   )

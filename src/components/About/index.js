@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.scss"
+import Projects from "../Projects";
+
 function About () {
   return (
-  <div className="middle-container">
+  <div className="about-container">
     <div className="profile">
       <h2>Hey!</h2>
       <p className="p2">
@@ -32,7 +34,7 @@ function About () {
     </div>
 
     {/* <!-- Contact Me --> */}
-    <a className="btn btn-project" href="portfolio.html">My Projects</a>
+    <a className="btn btn-project" href={<Projects />}>My Projects</a>
     <hr className="hr-contact" />
     <div id="contact" className="contact-me">
       <h2>Get In Touch</h2>

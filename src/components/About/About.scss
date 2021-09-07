@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
-.middle-container {
+.about-container {
   background-color: white;
   text-align: center;
-  margin: -1.5em 0 1em 0;
+  margin: -1.5em 0 0 0;
   padding: 0 5px;
 }
 
@@ -103,11 +103,13 @@ body {
 }
 
 .contact-me {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 645px) {
-  .middle-container {
+  .profile,
+  .skills,
+  .contact-me {
     width: 50%;
     padding-left: 25%;
   }

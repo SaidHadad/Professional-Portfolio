@@ -13,7 +13,7 @@
 .projects-container{
   background-color: white;
   text-align: center;
-  margin: -1.5em 0 1em 0;
+  margin: -1.5em 0 0em 0;
 }
 
 .portfolio-profile {
@@ -21,10 +21,14 @@
   text-align: center;
 }
 
+.portfolio-contact {
+  margin-bottom: 2em;
+}
+
 .middle-container {
   background-color: white;
   text-align: center;
-  margin: -1.5em 0 1em 0;
+  margin: -1.5em 0 0 0;
 }
 
 .project_img {
@@ -74,8 +78,13 @@
   text-align: center;
   letter-spacing: 0.5px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1em;
   transition: 0.8s all;
+  min-width: 110px;
+}
+
+.mainbtn a {
+  min-width: 110px;
 }
 
 .mainbtn:hover {
@@ -147,18 +156,10 @@
 }
 
 @media (min-width: 645px) {
-  .btnDiv {
-    margin-left: 25%;
-    width: 50%;
-  }
-  
-  .content {
-    width: 50%;
-    margin-left: 25%;
-  }
-
+  .profile-container,
+  .content,
   .portfolio-contact {
-    width: 50%;
     margin-left: 25%;
+    width: 50%;
   }
 }

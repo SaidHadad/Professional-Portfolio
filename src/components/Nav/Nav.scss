@@ -72,3 +72,22 @@ ul li a:hover {
     width: 80%;
   }
 }
+
+@media (min-width: 650px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 920) {
+  .navbar {
+    flex-direction: row;
+  }
+}

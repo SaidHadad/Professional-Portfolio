@@ -1,11 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import Nav from "../Nav";
-import "./Header.scss"
+import Projects from '../Projects';
+import About from '../About';
+import './Header.scss'; 
 
 function Header () {
+  
+  const [currentPage, handlePageChange] = useState("About");
+
+  const renderPage = () => {
+    switch(currentPage) {
+      case "About":
+        return <About />
+      case "Projects":
+        return <Projects />
+      // case "Contact":
+      //   return <Contact />
+      // case "Resume":
+      //   return <Resume />
+    }
+  };
+
   return (
     <header>
-      <Nav />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
       <div className="top-container">
         <div className="Intro">
           <h1>I'm Said</h1>
@@ -24,6 +42,7 @@ function Header () {
           <div className="bubble"></div>
         </div>
       </div>
+      {renderPage()}
     </header>
   )
 }
