@@ -1,0 +1,82 @@
+.ContactForm {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactFormContainer {
+  min-width: 50%;
+
+  text-align: -webkit-center;
+}
+
+.contactFormContainer h1 {
+  font-size: 2.5em;
+  font-family: 'Baloo Chettan 2', cursive;
+  color: #3282b8;
+  margin: 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nameForm,
+.emailForm,
+.messageForm {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.nameForm input,
+.emailForm input,
+.messageForm textarea {
+  width: 200px;
+}
+
+.formButton {
+  color: #fff;
+  background: #4299ed;
+  border-radius: 30px;
+  padding: 16px 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: 0.8s all;
+  min-width: 110px;
+  // margin-bottom: 2em;
+}
+
+.formButton:hover {
+  background: #0350a2;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.error-text {
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+
+  #contact-form {
+    width: min-content;
+    flex-direction: column;
+    height: 270px;
+  }
+
+  .nameForm,
+  .emailForm,
+  .messageForm {
+    flex-direction: column;
+    align-items: center;
+  }
+}

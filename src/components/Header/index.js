@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Nav from "../Nav";
 import Projects from '../Projects';
 import About from '../About';
+import ContactForm from '../Contact'
 import './Header.scss'; 
 
 function Header () {
@@ -14,8 +15,8 @@ function Header () {
         return <About />
       case "Projects":
         return <Projects />
-      // case "Contact":
-      //   return <Contact />
+      case "Contact":
+        return <ContactForm />
       // case "Resume":
       //   return <Resume />
     }
