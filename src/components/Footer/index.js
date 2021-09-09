@@ -27,7 +27,7 @@ function Footer () {
         </div>
         <div className="link">
           <a className="footer-link" href="index.html">Home</a>
-          <a className="footer-link" href="portfolio.html">Portfolio</a>
+          <a className="footer-link" href="index.html">Portfolio</a>
           <a target="blank" className="footer-link" href="https://drive.google.com/file/d/1fVNfVrx7wVrK0s_3j-tvQjqpMOTyCJxU/view?usp=sharing">Resume</a>
         </div>
     </div>
