@@ -3,6 +3,7 @@ import Nav from "../Nav";
 import Projects from '../Projects';
 import About from '../About';
 import ContactForm from '../Contact'
+import Resume from "../Resume";
 import './Header.scss'; 
 
 function Header () {
@@ -17,8 +18,8 @@ function Header () {
         return <Projects />
       case "Contact":
         return <ContactForm />
-      // case "Resume":
-      //   return <Resume />
+      case "Resume":
+        return <Resume />
     }
   };
 
