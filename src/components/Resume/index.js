@@ -10,7 +10,7 @@ function Resume () {
     WebViewer(
       {
         path: 'lib',
-        initialDoc: '/files/SaidResume.pdf',
+        initialDoc: './files/SaidResume.pdf',
       },
       viewer.current,
     ).then((instance) => {

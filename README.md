@@ -32,7 +32,7 @@
   <!-- ABOUT THE PROJECT -->
   ## About The Project
 
-  ![Photo Port](./src/assets/Images/Capture.JPG) <br>
+  ![Photo Port](./src/Assets/Images/Capture.JPG) <br>
   The user will be able to navigate through the portfolio, nav bar is fully iteractive and the images have modals.
   
   ## Built With
