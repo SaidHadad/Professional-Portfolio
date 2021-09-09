@@ -28,7 +28,7 @@ function Footer () {
         <div className="link">
           <a className="footer-link" href="index.html">Home</a>
           <a className="footer-link" href="index.html">Portfolio</a>
-          <a target="blank" className="footer-link" href="https://drive.google.com/file/d/1fVNfVrx7wVrK0s_3j-tvQjqpMOTyCJxU/view?usp=sharing">Resume</a>
+          <a target="blank" className="footer-link" href="https://drive.google.com/file/d/1jETz3aOj-RxWtEPY8Nc1ITKo_FsXuA61/view?usp=sharing">Resume</a>
         </div>
     </div>
     <p className="copyright">© 2021 <a href="https://github.com/SaidHadad" className="f-link">Said Hadad.</a> All rights reserved.</p>

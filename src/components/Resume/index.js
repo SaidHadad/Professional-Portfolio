@@ -1,42 +1,20 @@
-import React, { useRef, useEffect} from 'react';
-import WebViewer from '@pdftron/webviewer';
+import React from 'react';
 import "./Resume.scss"
 
-const Resume = () => {
-  const viewer = useRef(null);
+const Resume = ({ source }) => {
+  if (!source) {
+    return <div>Loading...</div>;
+  }
 
-  // if using a class, equivalent of componentDidMount 
-  useEffect(() => {
-    WebViewer(
-      {
-        path: 'Professional-Portfolio/webviewer/lib',
-        initialDoc: 'Professional-Portolio/files/SaidResumee.pdf',
-      },
-      viewer.current,
-    ).then((instance) => {
-      // const { documentViewer, annotationManager, Annotations } = instance.Core;
-
-      // documentViewer.addEventListener('documentLoaded', () => {
-      //   const rectangleAnnot = new Annotations.RectangleAnnotation({
-      //     PageNumber: 1,
-      //     // values are in page coordinates with (0, 0) in the top left
-      //     X: 100,
-      //     Y: 150,
-      //     Width: 200,
-      //     Height: 50,
-      //     Author: annotationManager.getCurrentUser()
-      //   });
-
-      //   annotationManager.addAnnotation(rectangleAnnot);
-      //   // need to draw the annotation otherwise it won't show up until the page is refreshed
-      //   annotationManager.redrawAnnotation(rectangleAnnot);
-      // });
-    });
-  }, []);
-
+  const src = source;
   return (
-    <div>
-      <div className="webviewer" ref={viewer}></div>
+    <div className='webviewer'>
+      <iframe
+        src={"https://docs.google.com/viewer?url=" + src + "&embedded=true"}
+        title="file"
+        width="100%"
+        height="600"
+      ></iframe>
     </div>
   );
 };

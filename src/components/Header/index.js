@@ -19,7 +19,8 @@ function Header () {
       case "Contact":
         return <ContactForm />
       case "Resume":
-        return <Resume />
+        // had to use the hosting of a friend so googledocs could load the pdf (working on making it work straight from googledrive)
+        return <Resume source="http://danischwarz.com/SaidResume.pdf"/>
       default:
         return <About />
     }
