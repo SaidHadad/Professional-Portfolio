@@ -13,7 +13,7 @@ const Resume = ({ source }) => {
         src={"https://docs.google.com/viewer?url=" + src + "&embedded=true"}
         title="file"
         width="100%"
-        height="90%"
+        height="91%"
       ></iframe>
     </div>
   );
