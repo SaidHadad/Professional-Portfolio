@@ -9,8 +9,8 @@ const Resume = () => {
   useEffect(() => {
     WebViewer(
       {
-        path: 'Profesional-Portfolio/webviewer/lib',
-        initialDoc: 'https://drive.google.com/file/d/1jETz3aOj-RxWtEPY8Nc1ITKo_FsXuA61/view?usp=sharing',
+        path: 'Professional-Portfolio/webviewer/lib',
+        initialDoc: 'Professional-Portolio/files/SaidResumee.pdf',
       },
       viewer.current,
     ).then((instance) => {
