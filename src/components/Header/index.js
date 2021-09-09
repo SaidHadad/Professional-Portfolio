@@ -20,6 +20,8 @@ function Header () {
         return <ContactForm />
       case "Resume":
         return <Resume />
+      default:
+        return <About />
     }
   };
 

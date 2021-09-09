@@ -1,20 +1,20 @@
-import Reactm, { useRef, useEffect } from 'react'
-import WebViewer from '@pdftron/webviewer'
-
+import React, { useRef, useEffect} from 'react';
+import WebViewer from '@pdftron/webviewer';
 import "./Resume.scss"
 
-function Resume () {
-  const viewer= useRef(null);
+const Resume = () => {
+  const viewer = useRef(null);
 
+  // if using a class, equivalent of componentDidMount 
   useEffect(() => {
     WebViewer(
       {
-        path: 'lib',
-        initialDoc: './files/SaidResume.pdf',
+        path: '/webviewer/lib',
+        initialDoc: '/files/SaidResumee.pdf',
       },
       viewer.current,
     ).then((instance) => {
-      const { documentViewer, annotationManager, Annotations } = instance.Core;
+      // const { documentViewer, annotationManager, Annotations } = instance.Core;
 
       // documentViewer.addEventListener('documentLoaded', () => {
       //   const rectangleAnnot = new Annotations.RectangleAnnotation({
@@ -33,12 +33,12 @@ function Resume () {
       // });
     });
   }, []);
-  
+
   return (
-    <div className="viewer"> 
-      <div className='webviewer' ref={viewer}></div>
+    <div>
+      <div className="webviewer" ref={viewer}></div>
     </div>
-  )
-}
+  );
+};
 
 export default Resume;
